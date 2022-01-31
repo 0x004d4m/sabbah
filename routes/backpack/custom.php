@@ -14,6 +14,16 @@ Route::group([
         (array) config('backpack.base.web_middleware', 'web'),
         (array) config('backpack.base.middleware_key', 'admin')
     ),
-    'namespace'  => 'App\Http\Controllers\Admin',
-], function () { // custom admin routes
-}); // this should be the absolute last line of this file
+    'namespace'  => 'App\Http\Controllers',
+], function () {
+    Route::crud('expert', 'ExpertController');
+    Route::crud('feature', 'FeatureController');
+    Route::crud('main', 'MainController');
+    Route::crud('plan', 'PlanController');
+    Route::crud('screenshot', 'ScreenshotController');
+    Route::crud('section', 'SectionController');
+    Route::crud('service', 'ServiceController');
+    Route::crud('sponser', 'SponserController');
+    Route::crud('team', 'TeamController');
+    Route::crud('video', 'VideoController');
+});

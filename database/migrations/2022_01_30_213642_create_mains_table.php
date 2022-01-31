@@ -34,7 +34,6 @@ class CreateMainsTable extends Migration
             $table->text('features_title3');
             $table->text('features_description3');
 
-
             $table->timestamps();
         });
     }
