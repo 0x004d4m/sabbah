@@ -32,7 +32,7 @@ class VideoController extends CrudController
         ]);
 
         $this->crud->setColumnDetails('video_link',[
-            'label' => "Video Link", // Table column heading
+            'label' => "Video Link",
             'type' => "image",
             'name' => 'video_link',
         ]);

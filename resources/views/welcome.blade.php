@@ -66,13 +66,13 @@
                             <a class="nav-link page-scroll" href="#prices">Prices</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#screenshots">Screenshot</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link page-scroll" href="#team">Team</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="#contact">Contact</a>
-                        </li>
-                        <li>
-                            <button class="btn btn-primary">Sign In</button>
                         </li>
                     </ul>
 

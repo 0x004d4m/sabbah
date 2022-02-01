@@ -29,6 +29,7 @@
 @if(backpack_user()->can('Manage Video'))
     <li class="nav-item"><a class="nav-link" href="{{ backpack_url('video') }}"><i class="la la-video nav-icon"></i> {{ trans('Video') }}</a></li>
 @endif
+<li class="nav-item"><a class="nav-link" href="https://fontawesome.com/v5.9/icons?d=gallery&p=2" target="_blank"><i class="la la-icons nav-icon"></i> {{ trans('Browse Icons') }}</a></li>
 @if(backpack_user()->can('Manage Auth'))
     <li class="nav-item nav-dropdown">
         <a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon la la-users"></i> Authentication</a>

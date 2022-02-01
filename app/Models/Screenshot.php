@@ -60,4 +60,12 @@ class Screenshot extends Model
             $this->attributes[$attribute_name] = $public_destination_path.'/'.$filename;
         }
     }
+
+    public static function boot()
+    {
+        parent::boot();
+        static::deleting(function($obj) {
+            Storage::delete(Str::replaceFirst('storage/','public/', $obj->image));
+        });
+    }
 }

@@ -39,7 +39,7 @@ class Main extends Model
     {
         $attribute_name = "image";
         // destination path relative to the disk above
-        $destination_path = "public/uploads/screenshot";
+        $destination_path = "public/uploads/Main";
 
         // if the image was erased
         if ($value==null) {
@@ -72,5 +72,13 @@ class Main extends Model
             $public_destination_path = Str::replaceFirst('public/', 'storage/', $destination_path);
             $this->attributes[$attribute_name] = $public_destination_path.'/'.$filename;
         }
+    }
+
+    public static function boot()
+    {
+        parent::boot();
+        static::deleting(function($obj) {
+            Storage::delete(Str::replaceFirst('storage/','public/', $obj->image));
+        });
     }
 }
