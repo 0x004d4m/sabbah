@@ -10,9 +10,7 @@ class SectionController extends CrudController
 {
 
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
     public function setup()
@@ -45,20 +43,11 @@ class SectionController extends CrudController
         ]);
     }
 
-    protected function setupCreateOperation()
-    {
-        $this->crud->setValidation(SectionRequest::class);
-
-        $this->crud->addField(['name' => 'name', 'type' => 'text', 'label' => 'Name']);
-        $this->crud->addField(['name' => 'title', 'type' => 'text', 'label' => 'Title']);
-        $this->crud->addField(['name' => 'text', 'type' => 'textarea', 'label' => 'Text']);
-    }
-
     protected function setupUpdateOperation()
     {
         $this->crud->setValidation(SectionRequest::class);
 
-        $this->crud->addField(['name' => 'name', 'type' => 'text', 'label' => 'Name']);
+        $this->crud->addField(['name' => 'name', 'type' => 'text', 'label' => 'Name','attributes' => ['readonly' => 'readonly',],]);
         $this->crud->addField(['name' => 'title', 'type' => 'text', 'label' => 'Title']);
         $this->crud->addField(['name' => 'text', 'type' => 'textarea', 'label' => 'Text']);
     }

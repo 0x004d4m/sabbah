@@ -8,6 +8,7 @@ use App\Models\{
     Main,
     Plan,
     Screenshot,
+    Section,
     Service,
     Sponser,
     Team,
@@ -28,6 +29,7 @@ class HomeController extends Controller
         $Teams = Team::select('*')->get();
         $Experts = Expert::select('*')->get();
         $Sponsers = Sponser::select('*')->get();
-        return view('welcome', compact('Main', 'Services', 'Features', 'Plans', 'Screenshots', 'Video', 'Teams', 'Experts', 'Sponsers'));
+        $Sections = Section::select('*')->get();
+        return view('welcome', compact('Main', 'Services', 'Features', 'Plans', 'Screenshots', 'Video', 'Teams', 'Experts', 'Sponsers', 'Sections'));
     }
 }

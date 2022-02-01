@@ -148,8 +148,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-offset-2 text-center mx-auto">
-                    <h2 class="section-title">Features designed for you:</h2>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                    <h2 class="section-title">{{ $Sections[0]->title }}</h2>
+                    <p>{{ $Sections[0]->text }}</p>
                 </div>
             </div>
             <div class="row">
@@ -170,8 +170,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-offset-2 col-md-offset-3 text-center mx-auto">
-                    <h2 class="section-title">Our Plans And Pricing:</h2>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                    <h2 class="section-title">{{ $Sections[1]->title }}</h2>
+                    <p>{{ $Sections[1]->text }}</p>
                 </div>
             </div>
             <div class="row">
@@ -196,8 +196,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
-                    <h2 class="section-title">App Screenshots:</h2>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                    <h2 class="section-title">{{ $Sections[2]->title }}</h2>
+                    <p>{{ $Sections[2]->text }}</p>
                 </div>
             </div>
             <div class="row">
@@ -232,8 +232,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
-                    <h2 class="section-title">Our Team:</h2>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                    <h2 class="section-title">{{ $Sections[3]->title }}</h2>
+                    <p>{{ $Sections[3]->text }}</p>
                 </div>
             </div>
             <div class="row">
@@ -268,8 +268,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
-                    <h2 class="section-title">Our Experts:</h2>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                    <h2 class="section-title">{{ $Sections[4]->title }}</h2>
+                    <p>{{ $Sections[4]->text }}</p>
                 </div>
             </div>
             <div class="row">
@@ -304,9 +304,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
-                    <!-- /// Title /// -->
-                    <h2 class="section-title">We Are Trusted By:</h2>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                    <h2 class="section-title">{{ $Sections[5]->title }}</h2>
+                    <p>{{ $Sections[5]->text }}</p>
                 </div>
             </div>
             <div class="row">
@@ -323,8 +322,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
-                    <h2 class="section-title">Don't Be Shy Send a Message:</h2>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                    <h2 class="section-title">{{ $Sections[6]->title }}</h2>
+                    <p>{{ $Sections[6]->text }}</p>
                 </div>
             </div>
 
@@ -353,7 +352,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
-            <p>&copy; Beam All Right Reserved 2018. Made By Bakhtari Badr</p>
+            <p>{{ $Sections[7]->text }}</p>
         </div>
     </section>
 
